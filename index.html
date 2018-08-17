@@ -21,23 +21,26 @@
         <nav class="site-nav">
           <ul>
             <li>
+              <a href="#">Каталог</a>
               <div class="subdirectory">
                 <span>Новинки</span>
                 <ul class="subdirectory-list">
-                  <li><a href="">Сливочное</a></li>
-                  <li><a href="">Щербеты</a></li>
-                  <li><a href="">Фруктовый лед</a></li>
-                  <li><a href="">Мелорин</a></li>
+                  <li><a href="catalog.html">Сливочное</a></li>
+                  <li><a href="#">Щербеты</a></li>
+                  <li><a href="#">Фруктовый лед</a></li>
+                  <li><a href="#">Мелорин</a></li>
                 </ul>
               </div>
             </li>
-            <li><a href="">Доставка и оплата</a></li>
-            <li><a href="">О Компании</a></li>
+            <li><a href="#">Доставка и оплата</a></li>
+            <li><a href="#">О Компании</a></li>
           </ul>
         </nav>
 
         <button class="site-search-btn"><span class="visually-hidden">поиск</span></button>
+
         <input class="site-search" name="site-search" type="search" placeholder="Что ищем?">
+
         <a class="login-in-btn" href="#">Вход</a>
         <div class="login-in-container">
           <input type="email" name="email">
@@ -46,13 +49,35 @@
           <a class="forget-password" href="#">Забыли пароль?</a>
           <a class="new-login" href="#">Новая регистрация</a>
         </div>
-        <a class="cart" href="№">Пусто</a>
+
+        <a class="cart" href="#">Пусто</a>
+        <div class="cart-goods">
+          <ul>
+            <li>
+              <button class="delete"><span class="visually-hidden">удалить товар</span></button>
+              <span class="goods-name">Пломбир с апельсиновым джемом</span>
+              <p class="goods-cost">1,5 кг x <span class="goods-wt">200 руб.</span></p>
+              <span class="goods-total-cost">300 руб.</span>
+            </li>
+            <li>
+              <button class="delete"><span class="visually-hidden">удалить товар</span></button>
+              <span class="goods-name">Клубничный пломбир с присыпкой из белого шоколада</span>
+              <p class="goods-cost">1,5 кг x <span class="goods-wt">300 руб.</span></p>
+              <span class="goods-total-cost">450 руб.</span>
+            </li>
+          </ul>
+
+          <p class="total">Итого: 750 руб.</p>
+          <a href="" class="btn">Оформить заказ</a>
+        </div>
+
+        <p class="phone">С 10 до 20, ежедневно<span class="tel">8 812 450-25-25</span></p>
       </header>
 
       <main>
         <h1 class="visually-hidden">Здесь Вы можете выбрать люое морожение</h1>
         
-        <p class="phone">С 10 до 20, ежедневно<span class="tel">8 812 450-25-25</span></p>
+        
 
         <section class="slider">
           <h2 class="visually-hidden">Слайдер</h2>
@@ -91,26 +116,30 @@
 
         <section class="hit">
           <h2 class="visually-hidden">Наши хиты</h2>
-          <ul class="hit-list">
-            <li class="hit-orange">
-              <img class="hit-icon" src="#" alt="Оранжевое мороженое">
-              <b class="price">310</b>
-              <p class="hit-title">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+          <ul class="product-list">
+            <li class="products-items hit-items">
+              <img class="product-icon" src="#" alt="Оранжевое мороженое">
+              <b class="product-price">310</b>
+              <p class="product-title">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+              <button class="btn quick-view">Быстрый просмотр</button>
             </li>
-            <li class="hit-chocolate">
-              <img class="hit-icon" src="#" alt="Шоколданое мороженое">
-              <b class="price">380</b>
-              <p class="hit-title">Сливочно-кофейное с кусочками шоколада</p>
+            <li class="products-items hit-items">
+              <img class="product-icon" src="#" alt="Шоколданое мороженое">
+              <b class="product-price">380</b>
+              <p class="product-title">Сливочно-кофейное с кусочками шоколада</p>
+              <button class="btn quick-view">Быстрый просмотр</button>
             </li>
-            <li class="hit-raspberry">
-              <img class="hit-icon" src="#" alt="Малиновое мороженое">
-              <b class="price">355</b>
-              <p class="hit-title">Сливочно-клубничное с присыпкой из белого шоколада</p>
+            <li class="products-items hit-items">
+              <img class="product-icon" src="#" alt="Малиновое мороженое">
+              <b class="product-price">355</b>
+              <p class="product-title">Сливочно-клубничное с присыпкой из белого шоколада</p>
+              <button class="btn quick-view">Быстрый просмотр</button>
             </li>
-            <li class="hit-caramel">
-              <img class="hit-icon" src="#" alt="Карамельное мороженое">
-              <b class="price">415</b>
-              <p class="hit-title">Сливочное крем-брюле с карамельной подливкой</p>
+            <li class="products-items hit-items">
+              <img class="product-icon" src="#" alt="Карамельное мороженое">
+              <b class="product-price">415</b>
+              <p class="product-title">Сливочное крем-брюле с карамельной подливкой</p>
+              <button class="btn quick-view">Быстрый просмотр</button>
             </li>
           </ul>
         </section>
@@ -174,7 +203,15 @@
         
       </footer>
 
-
+      <section class="feedback">
+        <h2 class="visually-hidden">Обратная связь</h2>
+        <p class="feedback-title">Мы обязательно вам ответим!</p>
+        <input type="text" placeholder="Как вас зовут?">
+        <input type="email" placeholder="Ваша почта для ответа?">
+        <textarea rows="10" placeholder="Напишите что-нибудь"></textarea>
+        <button type="submit">Отправить</button>
+        <button class="close"><span class="visually-hidden">Закрыть</span></button>
+      </section>
     </div>
   </body>
 
