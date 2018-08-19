@@ -7,6 +7,8 @@
     <meta name="keywords" content="купить мороженное, вкусное мороженное">
     <meta name="description" content="Лучший сайт вкусного мороженного с супер версткой">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
@@ -22,7 +24,7 @@
               <div class="subdirectory">
                 <span>Новинки</span>
                 <ul class="subdirectory-list">
-                  <li><a href="catalog.html">Сливочное</a></li>
+                  <li><a a class="subdirectory-list-current" href="catalog.html">Сливочное</a></li>
                   <li><a href="#">Щербеты</a></li>
                   <li><a href="#">Фруктовый лед</a></li>
                   <li><a href="#">Мелорин</a></li>
@@ -48,22 +50,27 @@
           <a class="new-login" href="#">Новая регистрация</a>
         </div>
 
-        <a class="cart cart-shop" href="#">2 товара</a>
-        <div class="cart-goods show">
-          <ul>
-            <li>
-              <button class="delete"><span class="visually-hidden">удалить товар</span></button>
-              <span class="goods-name">Пломбир с апельсиновым джемом</span>
-              <p class="goods-cost">1,5 кг x <span class="goods-wt">200 руб.</span></p>
-              <span class="goods-total-cost">300 руб.</span>
-            </li>
-            <li>
-              <button class="delete"><span class="visually-hidden">удалить товар</span></button>
-              <span class="goods-name">Клубничный пломбир с присыпкой из белого шоколада</span>
-              <p class="goods-cost">1,5 кг x <span class="goods-wt">300 руб.</span></p>
-              <span class="goods-total-cost">450 руб.</span>
-            </li>
-          </ul>
+            <div class="cart-containter cart-shop">
+              <a class="cart" href="#">2 товара</a>
+              <div class="cart-goods">
+                <ul>
+                  <li>
+                    <button class="delete"><span class="visually-hidden">удалить товар</span></button>
+                    <span class="goods-name">Пломбир с апельсиновым джемом</span>
+                    <p class="goods-cost">1,5 кг x <span class="goods-wt">200 руб.</span></p>
+                    <span class="goods-total-cost">300 руб.</span>
+                  </li>
+                  <li>
+                    <button class="delete"><span class="visually-hidden">удалить товар</span></button>
+                    <span class="goods-name">Клубничный пломбир с присыпкой из белого шоколада</span>
+                    <p class="goods-cost">1,5 кг x <span class="goods-wt">300 руб.</span></p>
+                    <span class="goods-total-cost">450 руб.</span>
+                  </li>
+                </ul>
+                <p class="total">Итого: 750 руб.</p>
+                <a href="" class="btn">Оформить заказ</a>
+              </div>
+            </div>
 
           <p class="total">Итого: 750 руб.</p>
           <a href="" class="btn">Оформить заказ</a>
@@ -74,7 +81,7 @@
 
       <main>
         <ul class="breadcrambs">
-          <li><a href="#">Главная</a></li>
+          <li><a href="index.html">Главная</a></li>
           <li><a href="#">Каталог</a></li>
           <li><a>Сливочное</a></li>
         </ul>
