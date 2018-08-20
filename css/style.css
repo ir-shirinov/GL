@@ -58,6 +58,10 @@ input[type="radio"].visually-hidden {
   margin: 0 auto;
 }
 
+.inner-page .wrapper-width {
+  padding-top: 9px;
+}
+
 .wrapper-padding {
   padding-right: 2.3%;
   padding-left: 2.3%;
@@ -1395,5 +1399,128 @@ a.supplier {
   background-color: transparent;
 
   cursor: pointer;
+}
+
+/*ВТОРАЯ СТРАНИЦA*/
+
+.inner-page header {
+  margin-bottom: 27px;
+}
+
+.breadcrambs {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 5px;
+
+  font-size: 0;
+
+  list-style: none;
+}
+
+.breadcrambs li {
+  position: relative;
+
+  display: inline-block;
+  padding-right: 22px;
+
+  font-size: 14px;
+}
+
+.commas {
+  position: absolute;
+  right: 8px;
+  top: -1px;
+
+  font-size: 15px;
+  color: #fff;
+}
+
+.breadcrambs a {
+  color: #ffffff;
+}
+
+.breadcrambs a:hover,
+.breadcrambs a:active {
+  color: #ffbc9e;
+}
+
+.breadcrambs a:hover .underline,
+.breadcrambs a:active .underline {
+  border-bottom-color: rgba(255,188,158,.3);
+}
+
+.inner-page h1 {
+  margin: 0;
+  margin-bottom: 24px;
+
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 41px;
+  color: #fff;
+}
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+  width: 860px;
+}
+
+.filters fieldset {
+  padding: 0;
+  margin: 0;
+
+  border:none;
+}
+
+.filters legend {
+  padding-left: 16px;
+  margin-bottom: 6px;
+
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+  color: #fff;
+}
+.filter-contain,
+.filler-cost,
+.filler-wt,
+.filler-filler {
+  padding: 8px 16px;
+
+  background-color: rgba(255,255,255,.2);
+  border-radius: 18px;
+}
+
+.filter-contain select{
+  color: #fff;
+
+  background-color: transparent;
+  border: none;
+
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+}
+
+.filter-sort .filter-contain {
+  position: relative;
+}
+
+.filter-sort .filter-contain::before {
+  content: '';
+
+  position: absolute;
+  top: 13px;
+  right: 15px;
+
+  height: 20px;
+  width: 12px;
+  border: 6px solid transparent;
+  border-top: 10px solid #fff;
 }
 
