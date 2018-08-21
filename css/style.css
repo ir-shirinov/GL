@@ -349,7 +349,7 @@ header {
 .site-search-container:hover,
 .site-search-container:focus {
   outline: none;
-  background-color: rgba(255,255,255);
+  background-color: rgb(255,255,255);
   background-image: url("../img/loupe-black.svg");
 }
 
@@ -421,7 +421,7 @@ header {
 .login-in:hover,
 .login-in:focus {
   outline: none;
-  background-color: rgba(255,255,255);
+  background-color: rgb(255,255,255);
   background-image: url("../img/log-in-black.svg");
 }
 
@@ -535,7 +535,7 @@ header {
 }
 
 .cart-shop {
-  background-color: rgba(255,255,255);
+  background-color: rgb(255,255,255);
   background-image: url("../img/cart-shop.svg");
 }
 
@@ -827,7 +827,7 @@ header {
   padding-right: 20px;
 
   font-size: 18px;
-  list-style: 24px;
+  line-height: 24px;
 
   border-radius: 21px;
 }
@@ -878,7 +878,7 @@ header {
   line-height: 45px;
   font-weight: 700;
   color: #fff;
-  text-shadow: 0px 1px 3px 0 rgba(49,50,53,.5);
+  text-shadow: 0 1px 3px rgba(49,50,53,.5);
 }
 
 .product-title {
@@ -1129,6 +1129,9 @@ header {
   top:0 ;
   left: 0;
   z-index: 2;
+
+  height: 430px;
+  width: 100%;
 }
 
 .contact .wrapper-width .wrapper-padding {
